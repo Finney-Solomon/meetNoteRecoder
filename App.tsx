@@ -1,6 +1,4 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
  *
  * @format
  */
@@ -24,6 +22,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import CallRecorder from './CallRecorder';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -61,6 +60,7 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+  console.log('solo');
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -72,13 +72,13 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
-        <View
+        {/* <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
+            screen and then come back to see your edits. solo
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
@@ -90,7 +90,10 @@ function App(): React.JSX.Element {
             Read the docs to discover what to do next:
           </Section>
           <LearnMoreLinks />
-        </View>
+        </View> */}
+        {/* <CallRecorder /> */}
+
+        <Text>Check</Text>
       </ScrollView>
     </SafeAreaView>
   );

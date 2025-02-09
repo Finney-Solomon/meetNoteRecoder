@@ -1,3 +1,12 @@
+// press J to open experimental-debugger
+npx react-native start --experimental-debugger
+
+// to Install in Andriod
+npm run android -- --mode="release"
+
+//Resetting the cache
+npx react-native start --reset-cache
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
